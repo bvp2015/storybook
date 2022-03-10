@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <head>
+    <!-- <meta name="viewport" content="width = 1050, user-scalable = no" /> -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=0"
+    />
+    <script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery-ui-1.8.20.custom.min.js"
+    ></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script type="text/javascript" src="js/basic.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?v=1.1" media="screen" />
+  </head>
+
+  <body>
+    <div class="flipbook-viewport">
+      <div class="loader">
+        <div class="bg-loader">
+          <img src="images/loader.gif" alt="gif" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="flipbook">
+          <div class="page hard">
+            <div class="book-front-wrapper">
+              <div class="book-front">
+                <img src="images/cover.jpg" alt="tortoise and hare" />
+              </div>
+            </div>
+          </div>
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <div class="welcome-text flex">
+              <p class="text-primary font-20">
+                Dear Reader,
+                <span class="break-line"
+                  >Welcome to interactive books. We are piloting this concept to
+                  make books more engaging for readers. Click on any image to
+                  open the 3D model. You can rotate and interact with it.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <model-viewer
+                bounds="tight"
+                src="images/Models/Forest Scene.glb"
+                camera-controls
+                environment-image="neutral"
+                reveal="interaction"
+                loading="eager"
+                poster="images/Pg1.png"
+                shadow-intensity="1"
+                auto-rotate-delay="3000"
+                autoplay
+                camera-orbit="-1.308deg 96.50deg"
+                field-of-view="95deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" href="https://anveshreddy21-default-experial.dev.8thwall.app/page1/"/>
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                Once upon a time, there was a beautiful forest where many
+                animals lived together.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 1</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+              <model-viewer
+                bounds="tight"
+                src="images/Models/Hare and Tortoise pg2.glb"
+                camera-controls
+                environment-image="neutral"
+                poster="images/Pg2.png"
+                reveal="interaction"
+                loading="eager"
+                shadow-intensity="1"
+                auto-rotate-delay="3000"
+                autoplay
+                camera-orbit="-1.308deg 99.50deg"
+                field-of-view="80deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" href="https://anveshreddy21-default-experial.dev.8thwall.app/page2/"/>
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                Among those animals, there lived a hare and a tortoise. The hare
+                was known for being loud and lazy.<br /><br />
+                The tortoise was known for being quiet and hardworking.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 2</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                ar-modes="webxr"
+                poster="images/Pg3.png"
+                src="images/Models/Page03.glb"
+                alt=""
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="-1.308deg 90.50deg"
+                field-of-view="100deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" href="https://anveshreddy21-default-experial.dev.8thwall.app/page3/"/>
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                One day, hare was having a conversation with the tortoise and
+                began bragging about himself. He told the tortoise, I am the
+                fastest animal in town. The hare did not stop there, he went on
+                to insult the tortoise about being slow.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 3</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg4.png"
+                src="images/Models/Page04.glb"
+                alt=""
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="-1.308deg 96.50deg"
+                field-of-view="80deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" href="https://anveshreddy21-default-experial.dev.8thwall.app/page4/"/>
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                The tortoise felt bad. He thought, you may be the fastest
+                animal, but I am hard working and won't give up.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 4</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page5/"
+            >
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg5.png"
+                ar-modes="webxr"
+                src="images/Models/Page05.glb"
+                alt=""
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="-1.308deg 96.50deg"
+                field-of-view="100deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                He wanted to prove the hare wrong and challenged him to race
+                with him. Hare readily accepted the challenge thinking he would
+                further insult the tortoise.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 5</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page6/"
+            >
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg6.png"
+                ar-modes="webxr"
+                src="images/Models/Page06a.glb"
+                alt=""
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="80deg 96.50deg"
+                field-of-view="100deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                The race began the next week. All animals gathered to see who
+                wins the race.<br /><br />
+                The hare raced sway sprinting as fast as he could. The tortoise
+                began slowly and steadily.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 6</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page7/"
+            >
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg7.png"
+                ar-modes="webxr"
+                src="images/Models/Page07.glb"
+                alt=""
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="1deg 96.50deg"
+                field-of-view="100deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                After running at full speed for several minutes, the hare got
+                tired. He looked down the road but could not find the tortoise
+                anywhere in sight.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 7</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page8/"
+            >
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg8.png"
+                ar-modes="webxr"
+                src="images/Models/Page08.glb"
+                alt="A 3D model of a reflective sphere"
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="1deg 96.50deg"
+                field-of-view="100deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                He thought The tortoise is slow, and I am fast. I could relax
+                for a bit and afford to win the race. He slept peacefully on the
+                grass.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 8</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page9/"
+            >
+              <model-viewer
+                camera-controls
+                loading="lazy"
+                reveal="interaction"
+                poster="images/Pg9.png"
+                ar-modes="webxr"
+                src="images/Models/Page09.glb"
+                alt="A 3D model of a reflective sphere"
+                autoplay
+                auto-rotate-delay="3000"
+                camera-orbit="-10deg 80.50deg"
+                field-of-view="150deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                While the hare napped, the tortoise kept walking. He overtook
+                the hare and almost reached the finish line.
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 9</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <a
+              href="https://anveshreddy21-default-experial.dev.8thwall.app/page10/"
+            >
+              <model-viewer
+                camera-controls
+                loading="eager"
+                reveal="interaction"
+                poster="images/Pg10.png"
+                ar-modes="webxr"
+                src="images/Models/Page10a.glb"
+                alt="A 3D model of a reflective sphere"
+                autoplay
+                camera-orbit="50deg 80.50deg"
+                field-of-view="150deg"
+              >
+                <div class="ar-button">
+                  <div class="button-box">
+                    <img src="images/icon.svg" class="ar-icon" alt="AR icon" />
+                  </div>
+                </div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents">
+              <p>
+                Hare woke up and started running as fast as he could. But
+                tortoise crossed the finish line first and won the race amidst
+                the cheering of all other animals.<br />
+                <br />
+                <strong>Moral of the story:</strong> Slow and steady wins the
+                race
+              </p>
+            </div>
+            <div class="page-footer">
+              <p>Page 10</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+              <model-viewer
+                id="hotspot-demo"
+                camera-controls
+                src="images/Models/Hare and Tortoise pg2.glb"
+                style="--poster-color: #ffffff00"
+                alt="Hare and Tortoise"
+                auto-rotate-delay="3000"
+                camera-orbit="-1deg 96.94deg auto"
+                field-of-view="80deg"
+              >
+                <button
+                  id="2"
+                  onclick="printAnswer(this.id)"
+                  slot="hotspot-red"
+                  data-position="-49.76021783271463m 29.978053875539388m 32.477581384780486m"
+                  data-normal="-0.4436269432951764m 0.13997794003889302m 0.8852125798276065m"
+                  data-visibility-attribute="visible"
+                >
+                  <div id="annotation">Hare</div>
+                </button>
+
+                <button
+                  id="1"
+                  onclick="printAnswer(this.id)"
+                  slot="hotspot-foot"
+                  data-position="57.50694378819706m 28.5421013684645m 47.30188886572978m"
+                  data-normal="0.22408622458284233m -0.5316217925938059m 0.8168008530795963m"
+                  data-visibility-attribute="visible"
+                >
+                  <div id="annotation">Tortoise</div>
+                </button>
+
+                <div id="question-annotation">
+                  Click on name of the animal that won the race?
+                </div>
+                <div id="answer-annotation"></div>
+              </model-viewer>
+            </a>
+            <div class="bg-grad"></div>
+            <div class="contents question-page">
+              <p>Lets check how well you understood the story</p>
+            </div>
+            <div class="page-footer">
+              <p>Page 11</p>
+            </div>
+          </div>
+
+          <div class="page bg-gradient">
+            <div class="middle-shadow"></div>
+            <div class="learning-game-section">
+              <iframe
+                src="https://playcanv.as/b/hlrgYse7/"  
+                class="game-area"
+                title="webgl game"
+              ></iframe>
+              <div class="bg-grad"></div>
+              <div class="contents">
+                <p>
+                  The above is an example of an interactive game. Depending on
+                  the story we can change the type of the game to ensure active
+                  learning.
+                </p>
+              </div>
+              <div class="page-footer">
+                <p>Page 12</p>
+              </div>
+            </div>
+          </div>
+          <div class="page bg-gradient end-page">
+            <div class="contact-info">
+              <div class="info-box">
+                <h4 class="greeting-text">Thanks a lot!</h4>
+                <p class="contact-detail">
+                  We are looking for your feedback. Please take 2 mins to fill
+                  your
+                  <a
+                    href="https://forms.gle/BCyP1WaJWdadsWda9"
+                    class="feedback-detail"
+                    target="_blank"
+                  >
+                    feedback.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function printAnswer(buttonClicked) {
+        if (buttonClicked === "1") {
+          document.getElementById("answer-annotation").innerHTML =
+            "Congratulations: Right Answer";
+          document.getElementById("answer-annotation").style.backgroundColor =
+            "green";
+        } else {
+          document.getElementById("answer-annotation").innerHTML =
+            "Sorry: Wrong Answer";
+          document.getElementById("answer-annotation").style.backgroundColor =
+            "red";
+        }
+        document.getElementById("answer-annotation").style.color = "black";
+        document.getElementById("answer-annotation").style.visibility =
+          "visible";
+        setTimeout(() => {
+          document.getElementById("answer-annotation").style.visibility =
+            "hidden";
+        }, 1000);
+      }
+
+      function loadApp() {
+        setInterval(function () {
+          $(".loader").fadeOut("slow");
+        }, 1000);
+        if ($(window).width() >= 768 && $(window).height() >= 425) {
+          $(".flipbook").turn({
+            width: 922,
+            height: 600,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true,
+          });
+        } else if ($(window).width() >= 320 && $(window).height() <= 425) {
+          $(".flipbook").turn({
+            width: 500,
+            height: 300,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true,
+          });
+        } else {
+          $(".flipbook").turn({
+            width: 500,
+            height: 500,
+            elevation: 50,
+            gradients: true,
+            autoCenter: true,
+          });
+        }
+
+        window.onload = (event) => {
+          var flipbook = $(".flipbook");
+          var win = $(this); //this = window
+          if (
+            (win.width() > 768 && win.height() >= 425) ||
+            (win.width() > 575 && win.height() <= 425)
+          ) {
+            flipbook.turn("display", "double");
+          } else {
+            flipbook.turn("display", "single");
+          }
+        };
+        $(window).resize(function () {
+          var flipbook = $(".flipbook");
+          var win = $(this);
+          if (
+            (win.width() > 768 && win.height() >= 425) ||
+            (win.width() > 575 && win.height() <= 425)
+          ) {
+            flipbook.turn("display", "double");
+          } else {
+            flipbook.turn("display", "single");
+          }
+        });
+
+        if (window.DeviceOrientationEvent) {
+          window.addEventListener(
+            "orientationchange",
+            function () {
+              location.reload();
+            },
+            false
+          );
+        }
+      }
+
+      // Load the HTML4 version if there's not CSS transform
+      yepnope({
+        test: Modernizr.csstransforms,
+        yep: ["js/turn.js"],
+        nope: ["js/turn.html4.min.js"],
+        /*both: ['css/style.css'],*/
+        complete: loadApp,
+      });
+    </script>
+  </body>
+</html>
